@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.db.models import Q
+from django.db.models import Q, Avg
 from .models import Voto, Cliente, Cuentabancaria
 
 # Create your views here.
@@ -37,8 +37,10 @@ def usuarios_votos_2023(request):
     return render(request, "cliente/clientes_con_votos_2023.html", {"clientes": clientes})
 
 #6- Obtener todos los modelos principales que tengan una media de votaciones mayor del 2,5
-
-
+def media_concreta(request):
+    votos = Voto.objects.select_related("herramienta", "cliente").aggregate(Avg("puntuacion"))
+    votos_media = resultado["edad__avg"].filter(puntuacion__gt=media).all()
+    return render(request, "cuenta/cuentas_bancarias_banco.html", {"votos": votos})
 
 
 

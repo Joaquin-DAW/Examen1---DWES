@@ -10,4 +10,5 @@ urlpatterns = [
     path('clientes_sin_voto',views.clientes_sin_voto, name='clientes_sin_voto'),
     path('cuentas_bancarias_banco/<str:texto>/',views.cuentas_bancarias_banco, name='cuentas_bancarias_banco'),
     path('usuarios_votos_2023',views.usuarios_votos_2023, name='usuarios_votos_2023'),
+    path('media_concreta',views.media_concreta, name='media_concreta'),
 ]
