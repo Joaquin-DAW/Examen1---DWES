@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Herramientas</title>
+</head>
+<body>
+    <h1>Cuentas del banco que sean Caixa o Unicaja de los usuarios que tengan el texto: {{texto}} en el nombre</h1>
+    {% for cuenta in cuentas %}
+        <h2>Número de cuenta: {{ cuenta.numero_cuenta }}</h2>
+        <h2>Banco: {{ cuenta.banco }}</h2>
+        <h2>descripcion: {{ cuenta.descripcion }}</h2>
+        <h2>Nombre cliente: {{ cuenta.cliente.nombre }}</h2><br><br>
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Herramientas</title>
+</head>
+<body>
+    <h1>Votos menor que 3 del cliente: {{cliente}}</h1>
+    {% for voto in votos %}
+        <h2>Nombre cliente: {{ voto.cliente.nombre }}</h2>
+        <h2>Herramienta: {{ voto.herramienta.nombre }}</h2>
+        <h2>Puntuacion: {{ voto.puntuacion }}</h2>
+        <h2>Comentario: {{ voto.comentario }}</h2>
+        <h2>Fecha votación: {{ voto.fecha_votacion }}</h2>
+    {% endfor %}
+</body>
+</html>

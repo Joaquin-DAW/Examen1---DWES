@@ -1,0 +1,169 @@
+[{
+    "model": "examen.herramienta",
+    "pk": 1,
+    "fields": {
+        "nombre": "Llave inglesa",
+        "precio": "5.50",
+        "descripcion": "Es una llave y es inglesa"
+    }
+},
+{
+    "model": "examen.herramienta",
+    "pk": 2,
+    "fields": {
+        "nombre": "Destornillador",
+        "precio": "2.50",
+        "descripcion": "Desatorinilla cosas"
+    }
+},
+{
+    "model": "examen.herramienta",
+    "pk": 3,
+    "fields": {
+        "nombre": "Alicates",
+        "precio": "3.75",
+        "descripcion": "Sirven para... ¿alicatar?"
+    }
+},
+{
+    "model": "examen.herramienta",
+    "pk": 4,
+    "fields": {
+        "nombre": "Martillo",
+        "precio": "4.75",
+        "descripcion": "Martillea cosas"
+    }
+},
+{
+    "model": "examen.herramienta",
+    "pk": 5,
+    "fields": {
+        "nombre": "Cuchara",
+        "precio": "1.25",
+        "descripcion": "Esa cosa que... taca y a comer"
+    }
+},
+{
+    "model": "examen.cliente",
+    "pk": 1,
+    "fields": {
+        "nombre": "Eduardo",
+        "correo_electronico": "eduardo@gmail.com",
+        "edad": 28,
+        "herramienta": [
+            1
+        ]
+    }
+},
+{
+    "model": "examen.cliente",
+    "pk": 2,
+    "fields": {
+        "nombre": "Homer",
+        "correo_electronico": "tipodeincognito@gmail.com",
+        "edad": 68,
+        "herramienta": [
+            5
+        ]
+    }
+},
+{
+    "model": "examen.cliente",
+    "pk": 3,
+    "fields": {
+        "nombre": "Agatha",
+        "correo_electronico": "aghosta@gmail.com",
+        "edad": 34,
+        "herramienta": [
+            3
+        ]
+    }
+},
+{
+    "model": "examen.cliente",
+    "pk": 4,
+    "fields": {
+        "nombre": "Bruno",
+        "correo_electronico": "silenciobruno@gmail.com",
+        "edad": 19,
+        "herramienta": [
+            4
+        ]
+    }
+},
+{
+    "model": "examen.cliente",
+    "pk": 5,
+    "fields": {
+        "nombre": "Denis",
+        "correo_electronico": "denis@gmail.com",
+        "edad": 36,
+        "herramienta": [
+            2
+        ]
+    }
+},
+{
+    "model": "examen.cuentabancaria",
+    "pk": 1,
+    "fields": {
+        "numero_cuenta": "ES6000491500051234567892",
+        "banco": "BBVA",
+        "descripcion": "¿Pero me puedo sentar?",
+        "cliente": 1
+    }
+},
+{
+    "model": "examen.cuentabancaria",
+    "pk": 2,
+    "fields": {
+        "numero_cuenta": "ES6000491545651134867892",
+        "banco": "CAIXA",
+        "descripcion": "Tu banco",
+        "cliente": 2
+    }
+},
+{
+    "model": "examen.cuentabancaria",
+    "pk": 3,
+    "fields": {
+        "numero_cuenta": "ES60657491545651134867123",
+        "banco": "ING",
+        "descripcion": "este banco está ocupado por un padre y un hijo el padre se llama Juan y el hijo ya te lo he dicho",
+        "cliente": 3
+    }
+},
+{
+    "model": "examen.voto",
+    "pk": 1,
+    "fields": {
+        "puntuacion": 4,
+        "comentario": "Correcto",
+        "fecha_votacion": "2023-06-13T04:17:19.158",
+        "herramienta": 1,
+        "cliente": 1
+    }
+},
+{
+    "model": "examen.voto",
+    "pk": 2,
+    "fields": {
+        "puntuacion": 5,
+        "comentario": "Eso eso",
+        "fecha_votacion": "2020-02-06T04:17:19.158",
+        "herramienta": 5,
+        "cliente": 2
+    }
+},
+{
+    "model": "examen.voto",
+    "pk": 3,
+    "fields": {
+        "puntuacion": 1,
+        "comentario": "No se puede alicatar con esto",
+        "fecha_votacion": "2024-08-10T04:17:19.158",
+        "herramienta": 3,
+        "cliente": 3
+    }
+}
+]

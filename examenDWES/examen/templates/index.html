@@ -4,6 +4,38 @@
     <h1>Examen</h1>
 
     <h2>Listado de enlaces del examen</h2>
-    
+    <div>
+        <h3>1- El último voto que se realizó en un modelo principal en concreto, y mostrar el comentario, 
+            la votación e información del usuario o cliente que lo realizó</h3>
+        <a href="{% url 'ultimo_voto' %}">Url del último voto</a>
+    </div><br>
+
+    <div>
+        <h3>2- Todos los modelos principales que tengan votos con una puntuación numérica menor a 3 y que realizó un usuario o cliente en concreto.</h3>
+        <a href="{% url 'voto_menor_tres' "Agatha"%}">Url de los votos con puntuación menor a 3 hechos por un usuario concreto</a>
+    </div><br>
+
+    <div>
+        <h3>3- Todos los usuarios o clientes que no han votado nunca y mostrar información sobre estos usuarios y clientes al completo.</h3>
+        <a href="{% url 'clientes_sin_voto' %}">Url de los cliente que nunca han votado</a>
+    </div><br>
+
+    <div>
+        <h3>4- Obtener las cuentas bancarias que sean de la Caixa o de Unicaja y que el propietario tenga un nombre que contenga un texto en concreto, 
+            por ejemplo “Juan”.</h3>
+        <a href="{% url 'cuentas_bancarias_banco' "Homer"%}">Url de las cuentas bancarias</a>
+    </div><br>
+
+    <div>
+        <h3>5- Obtener los votos de los usuarios que hayan votado a partir del 2023 con una puntuación numérica igual a 5  
+            y que tengan asociada una cuenta bancaria.</h3>
+        <a href="{% url 'usuarios_votos_2023' %}">Url de los cliente que han votado en 2023</a>
+    </div><br>
+
+    <div>
+        <h3>6- Todos los usuarios o clientes que no han votado nunca y mostrar información sobre estos usuarios y clientes al completo.</h3>
+        <a href="{% url 'clientes_sin_voto' %}">Url de los cliente que nunca han votado</a>
+    </div><br>
+
     </body>
 </html>

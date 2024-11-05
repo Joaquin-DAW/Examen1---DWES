@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Herramientas</title>
+</head>
+<body>
+    <h1>Votos de cliente despus de 2023, con votacion de 5 y asociados a una cuenta bancaria</h1>
+    {% for cliente in clientes %}
+        <h2>Número de cuenta: {{ cliente.nombre }}</h2>
+        <h2>Banco: {{ cliente.banco }}</h2>
+        <h2>descripcion: {{ cliente.descripcion }}</h2>
+        <h2>Nombre cliente: {{ cliente.cliente.nombre }}</h2><br><br>
+    {% endfor %}
+</body>
+</html>
